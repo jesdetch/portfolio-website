@@ -8,6 +8,7 @@ export const XSauceIconButton = () => {
 			<IconButton
 				position={'absolute'}
 				left={4}
+				top={9}
 				aria-label="Xsauce Icon Button"
 				colorScheme="brand.100"
 				onClick={null}
