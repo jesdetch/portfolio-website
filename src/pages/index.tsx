@@ -1,56 +1,44 @@
 import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+	Link as ChakraLink,
+	Box,
+} from '@chakra-ui/react';
 
-import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
+import { Container } from '../components/Container';
+import { Main } from '../components/Main';
+import { DarkModeSwitch } from '../components/DarkModeSwitch';
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import { HeaderAddon } from '../components/HeaderAddon';
+import { Hero } from '../components/Hero';
+import { BlockTwo } from '../components/BlockTwo';
+import { BlockThree } from '../components/BlockThree';
+import { BlockFour } from '../components/BlockFour';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
-const Index = () => (
-  <Container height="100vh">
-    <Hero />
-    <Main>
-      <Text color="text">
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>TypeScript</Code>.
-      </Text>
+const Index = () => {
+	return (
+		<Container minHeight="100vh" height={'fit-content'}>
+			<HeaderAddon />
+			<Header />
+			<Main alignItems={'center'} justifyContent={'start'}>
+				<Hero />
+				<Box m={[2, 6]} />
+				<BlockTwo />
 
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
-    </Main>
+				<Box m={[2, 6]} />
+				<BlockThree />
 
-    <DarkModeSwitch />
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
-  </Container>
-)
+				<Box m={[2, 6]} h={['1em', '1em']} />
+				<BlockFour />
 
-export default Index
+				<Box m={[2, 6]} h={['1em', '1em']} />
+				{/* <BlockFive /> */}
+			</Main>
+
+			<Footer />
+		</Container>
+	);
+};
+
+export default Index;
