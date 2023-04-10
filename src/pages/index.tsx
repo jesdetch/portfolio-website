@@ -14,16 +14,15 @@ import { BlockTwo } from '../components/BlockTwo';
 import { BlockThree } from '../components/BlockThree';
 import { BlockFour } from '../components/BlockFour';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 const Index = () => {
 	return (
 		<Container minHeight="100vh" height={'fit-content'}>
-			<HeaderAddon />
+			{/* <HeaderAddon /> */}
 			<Header />
 			<Main alignItems={'center'} justifyContent={'start'}>
 				<Hero />
-				<Box m={[2, 6]} />
+
 				<BlockTwo />
 
 				<Box m={[2, 6]} />
@@ -32,7 +31,6 @@ const Index = () => {
 				<Box m={[2, 6]} h={['1em', '1em']} />
 				<BlockFour />
 
-				<Box m={[2, 6]} h={['1em', '1em']} />
 				{/* <BlockFive /> */}
 			</Main>
 

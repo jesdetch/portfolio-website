@@ -1,151 +1,68 @@
-import { ArrowUpIcon, CheckIcon } from '@chakra-ui/icons';
 import {
 	Box,
 	Button,
 	Flex,
-	FormControl,
 	Grid,
 	GridItem,
 	Heading,
-	Hide,
-	HStack,
-	Input,
-	InputGroup,
-	InputRightAddon,
-	Spacer,
 	Stack,
 	Text,
-	useToast,
 } from '@chakra-ui/react';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { ScrollAnimation } from './ScrollAnimation';
-import { useRouter } from 'next/router';
-import { useState } from 'react';
-import Image from 'next/image';
-import FreePlayComputerViewImage from '../public/FreePlayComputerViewImage.png'
+
 
 export const Hero = ({ title }: { title: string }) => {
-	const toast = useToast();
-
-	const [email, setEmail] = useState('');
-
-	const handleSubmit = (event) => {
-		event.preventDefault();
-		let data = new FormData(event.target);
-		//alert(`The name you entered was: ${email}`);
-
-		console.log(data);
-		const action = event.target.action;
-		fetch(action, {
-			method: 'POST',
-			body: data,
-		}).then(() => {
-			//alert('Success!');
-
-			toast({
-				position: 'bottom-right',
-				render: () => (
-					<Flex
-						flexDirection={{ xs: 'column', md: 'row' }}
-						color="brand.200"
-						p={3}
-						bg="brand.100"
-						maxWidth={'100%'}
-						alignItems={'center'}
-						borderRadius={6}
-					>
-						<CheckIcon margin={2} />
-						<Text overflowWrap={'break-word'} textAlign={'center'}>
-							You have successfully joined the waitlist!
-						</Text>
-					</Flex>
-				),
-			});
-			setEmail('');
-		});
-	};
-
 	return (
-		<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
+		<Grid
+			paddingY={'12'}
+			px={{ base: '2rem', md: '10rem' }}
+			templateColumns="repeat(5, 1fr)"
+			width={'100%'}
+			backgroundColor={'#fff0e1'}
+
+		>
 			<GridItem
 				colSpan={{ xs: 12, md: 2 }}
-				h="10"
 				height={'fit-content'}
 				alignSelf={'center'}
 				paddingY={6}
 				placeSelf={'start'}
+
 			>
 				<Stack>
 					<ScrollAnimation animation="fade-up">
-						<Text fontSize="sm" paddingY={3}>
-							DRIVING CULTURE FORWARD
-						</Text>
-					</ScrollAnimation>
-					<ScrollAnimation animation="fade-up">
-						<Heading
-							fontWeight={'semibold'}
-							fontSize="4xl"
-							lineHeight={'base'}
-							paddingY={3}
-						>
-							<Box>
-								The Future of&nbsp;
-								<Box display={'inline-block'} color={'brand.100'}>
-									Culture
-								</Box>
-							</Box>
+						<Heading fontWeight={'semibold'} fontSize="7xl" lineHeight={'base'}>
+							Detchi.
 						</Heading>
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
-						<Text fontSize="xl" paddingY={3}>
+						<Text fontSize={{ base: 'sm', lg: 'md' }} paddingY={1}>
 							Xsauce is a dynamic, decentralized ecosystem which allows you to
 							translate your knowledge of culture into money in your pocket.
 						</Text>
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
-						<form
-							id="email-form"
-							method="POST"
-							action="https://script.google.com/macros/s/AKfycbxzfszRCRSs2zbE7a4uDmHTUl-oxG_XHjiefFWXv7y-TWgZEOldmD9YcjavzL4ksCYYlw/exec"
-							onSubmit={handleSubmit}
+						<Flex
+							width={'100%'}
+							justifyContent={{ base: 'center', md: 'start' }}
 						>
-							<InputGroup alignSelf="center" border="0px">
-								<FormControl>
-									<Input
-										id="Email"
-										name="Email"
-										type="email"
-										placeholder="email@xyz.com"
-										fontSize={{ xs: 'xs', md: 'sm' }}
-										width={'100%'}
-										bg="colors.white"
-										color="black"
-										border="0.5px"
-										borderColor={'black'}
-										borderRightRadius={'0px'}
-										onChange={(e) => setEmail(e.target.value)}
-										value={email}
-									/>
-								</FormControl>
-								<InputRightAddon
-									width={'50%'}
-									bg="brand.100"
-									color="black"
-									fontSize={{ xs: 'xs', md: 'sm' }}
-									as={Button}
-									whiteSpace={'break-spaces'}
-									type="submit"
-									border="0px"
-									borderColor={'black'}
-									borderLeftRadius={'0px'}
-								>
-									<Text whiteSpace={'break-spaces'} paddingX={2}>
-										Join Waitlist
-									</Text>
-									<FiArrowUpRight />
-								</InputRightAddon>
-							</InputGroup>
-						</form>
+							<Button
+								width={'170px'}
+								bg="brand.100"
+								color="black"
+								fontSize={{ xs: 'xs', md: 'sm' }}
+								whiteSpace={'break-spaces'}
+								border="2px"
+								borderRadius={'0px'}
+								borderColor={'black'}
+							>
+								<Text whiteSpace={'break-spaces'} padding={2}>
+									Contact
+								</Text>
+								<FiArrowUpRight />
+							</Button>
+						</Flex>
 					</ScrollAnimation>
 				</Stack>
 			</GridItem>
@@ -156,21 +73,31 @@ export const Hero = ({ title }: { title: string }) => {
 				height={'fit-content'}
 				width={'100%'}
 				placeSelf={'center'}
+				display={"flex"}
 			>
 				{/*TODO: Fix scaling on small sc */}
-				<Flex
-					overflow={'hidden'}
-					justifyContent={'center'}
-					alignItems={'center'}
-					as={ScrollAnimation}
-					anchorPlacement={'top-bottom'}
-					offset={'120'}
-					paddingLeft={{ md: '2em' }}
+				<Box
+					height={12}
+					width={"100%"}
+					backgroundColor={"#F7E548"}
 				>
+				</Box>
+				<Box
+					height={7}
+					width={"70%"}
+					marginTop={4}
 
-					<Image src={FreePlayComputerViewImage}
-					/>
-				</Flex>
+					backgroundColor={"#f74896"}
+				>
+				</Box>
+				<Box
+					marginTop={4}
+					height={10}
+					alignSelf={"end"}
+					width={"50%"}
+					backgroundColor={"#ad3269"}
+				>
+				</Box>
 			</GridItem>
 		</Grid>
 	);

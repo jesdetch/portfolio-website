@@ -995,6 +995,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/space-grotesk/-/space-grotesk-4.5.13.tgz#12df2d9a7f9537ef2285c605371230521ed0734a"
   integrity sha512-HYjs3C/ME3N55+9la5FGH3NebpBqyCP03DJzDLYlQ/fpnYOoQcEEoojtMyqDr8kBlQtrB6FSoa3vy84Wh0ZFqw==
 
+"@fontsource/work-sans@^4.5.14":
+  version "4.5.14"
+  resolved "https://registry.yarnpkg.com/@fontsource/work-sans/-/work-sans-4.5.14.tgz#965bf103baa9f812d042b5f678a34f632fa76f2e"
+  integrity sha512-AFBSDBA3hnSCXHwb52qBOMEGqF5nfdbANp+y5/hbE1PMjYfFY0lUdtUwL5J7mRAdyn1NJwobJlhduHtlAyPzmA==
+
 "@next/env@13.3.0":
   version "13.3.0"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.3.0.tgz#cc2e49f03060a4684ce7ec7fd617a21bc5b9edba"

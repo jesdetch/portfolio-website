@@ -1,8 +1,6 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
 import {
-	Box,
 	Button,
-	Divider,
 	Drawer,
 	DrawerBody,
 	DrawerCloseButton,
@@ -11,8 +9,6 @@ import {
 	DrawerHeader,
 	DrawerOverlay,
 	Flex,
-	FlexProps,
-	Input,
 	Text,
 	useColorModeValue,
 	useDisclosure,
@@ -20,7 +16,6 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
-import { XSauceIconButton } from './XSauceIconButton';
 
 export const HeaderDrawer = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
