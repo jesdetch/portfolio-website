@@ -34,9 +34,7 @@ export const Header = ({ title }: { title: string }) => {
 			<Show above="md">
 				<HStack spacing={6} fontWeight={'semibold'} fontSize={'sm'}>
 					<a
-						href="https://docs.xsauce.io/getting-started/introduction"
-						target={'_blank'}
-						rel={'noreferrer'}
+
 					>
 						<Button
 							whiteSpace={'nowrap'}
@@ -49,9 +47,7 @@ export const Header = ({ title }: { title: string }) => {
 						</Button>
 					</a>
 					<a
-						href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
-						target={'_blank'}
-						rel={'noreferrer'}
+
 					>
 						<Button
 							whiteSpace={'nowrap'}
@@ -65,9 +61,7 @@ export const Header = ({ title }: { title: string }) => {
 					</a>
 
 					<a
-						href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
-						target={'_blank'}
-						rel={'noreferrer'}
+
 					>
 						<Button
 							whiteSpace={'nowrap'}
@@ -88,9 +82,7 @@ export const Header = ({ title }: { title: string }) => {
 						backgroundColor={"red"}
 					>
 					<a
-						href="https://docs.xsauce.io/connect/socials"
-						target={'_blank'}
-						rel={'noreferrer'}
+
 					>
 						<Button
 							position={{ base: "static", md: "absolute" }}

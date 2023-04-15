@@ -23,18 +23,18 @@ const Index = () => {
 			<Main alignItems={'center'} justifyContent={'start'}>
 				<Hero />
 
-				<BlockTwo />
+				{/* <BlockTwo />
 
 				<Box m={[2, 6]} />
 				<BlockThree />
 
 				<Box m={[2, 6]} h={['1em', '1em']} />
-				<BlockFour />
+				<BlockFour /> */}
 
 				{/* <BlockFive /> */}
 			</Main>
 
-			<Footer />
+			{/* <Footer /> */}
 		</Container>
 	);
 };

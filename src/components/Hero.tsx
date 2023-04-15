@@ -38,8 +38,7 @@ export const Hero = ({ title }: { title: string }) => {
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
 						<Text fontSize={{ base: 'sm', lg: 'md' }} paddingY={1}>
-							Xsauce is a dynamic, decentralized ecosystem which allows you to
-							translate your knowledge of culture into money in your pocket.
+							Software engineer.
 						</Text>
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
