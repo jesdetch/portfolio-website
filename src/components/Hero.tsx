@@ -33,12 +33,12 @@ export const Hero = ({ title }: { title: string }) => {
 				<Stack>
 					<ScrollAnimation animation="fade-up">
 						<Heading fontWeight={'semibold'} fontSize="7xl" lineHeight={'base'}>
-							Detchi.
+							Jessie Detchou.
 						</Heading>
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
 						<Text fontSize={{ base: 'sm', lg: 'md' }} paddingY={1}>
-							Software engineer.
+							Full stack software engineer experienced in developing web and mobile apps.
 						</Text>
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
