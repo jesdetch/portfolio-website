@@ -22,11 +22,11 @@ export const BlockTwo = ({ title }: { title: string }) => (
 			<Stack>
 				<ScrollAnimation animation="fade-up">
 					<Heading fontWeight={'semibold'} fontSize="3xl">
-						Experience
+						Website is Under Reconstruction
 					</Heading>
 				</ScrollAnimation>
 
-				<SimpleGrid columns={{ sm: 1, md: 2 }} spacingX={8}>
+				{/* <SimpleGrid columns={{ sm: 1, md: 2 }} spacingX={8}>
 					<Box height="fit-content">
 						<Flex as={ScrollAnimation} alignItems={'center'}>
 							<svg
@@ -141,7 +141,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 							</Text>
 						</ScrollAnimation>
 					</Box>
-				</SimpleGrid>
+				</SimpleGrid> */}
 			</Stack>
 		</GridItem>
 	</Grid>
